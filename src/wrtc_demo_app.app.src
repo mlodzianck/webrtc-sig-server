@@ -1,0 +1,10 @@
+{application, wrtc_demo_app,
+ [
+  {description, "Web rtc simple demo signaling server"},
+  {id, "WRTC-DEMO"},
+  {vsn,'0.01a'},
+  {registered, [ call_server,subs_db] },
+  {applications, [ kernel, stdlib] },
+  {mod, {wrtc_demo_app, []} }
+ ]
+}.

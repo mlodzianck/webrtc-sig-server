@@ -1,0 +1,17 @@
+/.settings
+/deps
+/ebin/*.app
+/ebin/*.beam
+/ebin/*.beam
+/ebin/*.beam
+/ebin/*.beam
+/ebin/*.beam
+/ebin/*.beam
+/ebin/*.beam
+/ebin/*.beam
+/gproc_dist_nonode@nohost
+/report.log
+/wrtc-demo.access
+/wrtc-demo.auth
+/foobar.access
+/foobar.auth
