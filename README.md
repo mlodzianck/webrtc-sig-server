@@ -15,3 +15,6 @@ uses websockets as a transport layer for realtime messages.
 next in erlang shell
 1>application:start(wrtc_demo_app).
 ```
+
+
+license http://www.gnu.org/licenses/gpl.html
