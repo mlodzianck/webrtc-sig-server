@@ -89,6 +89,13 @@ handle_text_message([{command,"confirm_call"}|Params],State) ->
 	io:format("Confirming call from PID ~p~n",[SelfPid]),
 	call_server:b_party_confirmed(CallId),
 	{noreply, State};
+
+handle_text_message([{command,"decline_call"}|Params],State) ->
+	CallId = proplists:get_value(call_id, Params),
+	SelfPid = self(),
+	io:format("B Declined call from PID ~p~n",[SelfPid]),
+	call_server:b_party_declined(CallId),
+	{noreply, State};
 handle_text_message([{command,"end_call"}|Params],State) ->
 	CallId = proplists:get_value(call_id, Params),
 	SelfPid = self(),
